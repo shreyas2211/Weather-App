@@ -1,0 +1,127 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 1.188rem);
+  background: #000;
+  background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+  font-size: 120%;
+}
+
+.card {
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(5, 2, 12, 0.66);
+  backdrop-filter: blur(5px);
+  color: antiquewhite;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  border: none;
+  outline: none;
+  padding: 0.4rem 1rem;
+  border-radius: 1.5rem;
+  background: rgba(124, 124, 124, 0.17);
+  color: #fff;
+  font-size: 105%;
+  font-family: inherit;
+  width: 20.25rem;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(124, 124, 124, 0.17);
+  color: hsl(0, 0%, 57%);
+  height: 2.75rem;
+  width: 2.75rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.searchButton:hover {
+  background: rgba(124, 124, 124, 0.42);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  height: 49px;
+  margin: 30px 0 0 0;
+  align-items: center;
+}
+
+.city {
+  margin: 0.6rem;
+}
+
+.altitude {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 0 2.5rem 0;
+}
+
+.temp {
+  margin: 0;
+}
+
+.iconDescription {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.details {
+  width: 100%;
+  border: none;
+  margin: 28px 0 0 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.details td,
+.details th {
+  /* border: 1px solid white; */
+  padding: 3px;
+}
+
+.details thead {
+  border: none;
+  font-size: 0.95rem;
+  color: lightgrey;
+}
+
+.tableValues {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="searchBar" placeholder="Search" />
+        <button class="searchButton">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather">
+        <div class="location">
+          <h2 class="city">Weather in Rajkot</h2>
+          <h2 class="country">(India)</h2>
+        </div>
+        <h6 class="altitude">(Longitude : 70.7833, Latitude: 22.3)</h6>
+        <h1 class="temp">25°C</h1>
+        <div class="iconDescription">
+          <img
+            src="https://openweathermap.org/img/wn/03d.png"
+            alt=""
+            class="icon"
+          />
+          <div class="description">Cloudy</div>
+        </div>
+
+        <table class="details" cellspacing="13">
+          <thead>
+            <tr class="tableDetails">
+              <td>Real Feel</td>
+              <td>Humidity</td>
+              <td>Wind</td>
+              <td>Pressure</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tableValues">
+              <td class="realFeel">25°C</td>
+              <td class="humidity">50%</td>
+              <td class="wind">5 km/h</td>
+              <td class="pressure">1012 mbar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
